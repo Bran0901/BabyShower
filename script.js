@@ -1,3 +1,5 @@
+window.addEventListener("DOMContentLoaded", () => {
+
 // Cuenta regresiva
 const evento = new Date("2025-07-20T16:00:00").getTime();
 const countdown = document.getElementById("countdown");
@@ -105,4 +107,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-  
+  });
