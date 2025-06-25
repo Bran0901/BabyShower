@@ -18,8 +18,8 @@ body {
 }
 
 .card {
-  background: #ffdaec;
-  background: #ffdaeccc;
+  background: #f280b7;
+  background: #f280b7cc;
   padding: 30px;
   margin: 40px auto;
   width: 90%;
@@ -66,8 +66,8 @@ body {
 }
 
 .info-card {
-  background: #ffdaec;
-  background: #ffdaecee;
+  background: #f280b7;
+  background: #f280b7ee;
   padding: 25px;
   margin: 50px auto;
   max-width: 500px;
