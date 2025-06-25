@@ -55,20 +55,40 @@ function mostrarMensaje() {
 }
 
 
-// Carrusel
+// Carrusel con fade entre imágenes
+const imagenesCarrusel = document.querySelectorAll(".carrusel-img");
 let indice = 0;
 
-function moverCarrusel(direccion) {
-  const carrusel = document.getElementById("carruselContenido");
-  const total = carrusel.children.length;
-
-  indice += direccion;
-
-  if (indice < 0) indice = total - 1;
-  if (indice >= total) indice = 0;
-
-  carrusel.style.transform = `translateX(-${indice * 100}%)`;
+function mostrarImagen(indiceNuevo) {
+  imagenesCarrusel.forEach((img, i) => {
+    img.classList.remove("visible");
+    if (i === indiceNuevo) {
+      img.classList.add("visible");
+    }
+  });
+  indice = indiceNuevo;
 }
+
+function cambiarImagen(direccion) {
+  let nuevoIndice = indice + direccion;
+
+  if (nuevoIndice < 0) nuevoIndice = imagenesCarrusel.length - 1;
+  if (nuevoIndice >= imagenesCarrusel.length) nuevoIndice = 0;
+
+  mostrarImagen(nuevoIndice);
+}
+
+// ⟨ ⟩ Botones (si usas)
+function moverCarrusel(direccion) {
+  cambiarImagen(direccion);
+}
+
+// Cambio automático
+setInterval(() => {
+  cambiarImagen(1);
+}, 4000);
+
+
 
 
 // QR - Generar al cargar
@@ -82,4 +102,7 @@ window.addEventListener("DOMContentLoaded", () => {
       level: "H"
     });
   });
+
+
+
   
