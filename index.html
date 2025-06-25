@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación Baby Shower</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <section class="card" id="invitationCard" onclick="mostrarMensaje()">
+        <img id="imagen" src="assets/img/baby.png" alt="Baby Shower" />
+        <h1 id="titulo">¡Estás invitado!</h1>
+        <p id="texto">Acompáñanos a celebrar la llegada de nuestra bebé 💖</p>
+        <div id="countdown">Cargando...</div>
+    </section>
+
+    <section class="info-card">
+        <h2>Detalles del Evento</h2>
+        <p><strong>📅 Fecha:</strong> Domingo 20 de julio de 2025</p>
+        <p><strong>⏰ Hora:</strong> 4:00 PM</p>
+        <p><strong>📍 Lugar:</strong> Salón “Alegría” – Av. Fiesta Infantil #123, Morelia, Michoacán</p>
+        <p><strong>🎁 Nota:</strong> Puedes traer pañales o ropita si lo deseas. ¡Tu presencia es lo más importante!</p>
+        <p><a href="https://www.google.com/maps?q=19.700626,-101.186825" target="_blank">📌 Ver ubicación en Google Maps</a></p>
+    </section>
+
+    <section class="galeria">
+        <h2>Galería del Recuerdo 📸</h2>
+        <div class="carrusel">
+          <button class="prev" onclick="moverCarrusel(-1)">⟨</button>
+          <div class="carrusel-contenido" id="carruselContenido">
+            <img src="assets/img/baby.png" alt="Foto 1" />
+            <img src="assets/img/baby.png" alt="Foto 2" />
+            <img src="assets/img/baby.png" alt="Foto 3" />
+          </div>
+          <button class="next" onclick="moverCarrusel(1)">⟩</button>
+        </div>
+      </section>
+
+      
+      <section class="qr">
+        <h2>Comparte esta invitación 📱</h2>
+        <canvas id="qrCanvas"></canvas>
+        <p><small>Escanea el código o compártelo con tus seres queridos.</small></p>
+      </section>
+      
+      
+      
+      
+      <audio id="audioBienvenida" src="assets/audio/cancion.mp3" preload="auto"></audio>
+    
+
+  
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+
+
+  </body>
+  
+</html>
