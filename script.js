@@ -2,9 +2,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // 🎉 Confeti automático al entrar
   confetti({
-    particleCount: 200,
-    spread: 70,
-    origin: { y: 0.6 },
+    particleCount: 100,
+    spread: 60,
+    origin:{y:0.7},
   });
 
   // 🔊 Audio de fondo al entrar
