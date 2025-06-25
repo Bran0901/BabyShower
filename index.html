@@ -10,42 +10,38 @@
 <body>
   <main class="contenedor-principal">
 
+    <div id="activarSonido" class="btn-sonido"> 🔊 </div>
 
-  <div id="activarSonido" class="btn-sonido">
-  🔊
-  </div>
+    <section class="card" id="invitationCard">
+        <img id="imagen" src="assets/img/nina.png" alt="Baby Shower" />
+        <h2 id="titulo">¡ESTÁS INVITADO!</h2>
+        <p id="texto">Acompáñanos a celebrar la llegada de nuestra bebé</p>
+        <div id="countdown">Cargando...</div>
+    </section>
 
+    <section class="info-card">
+        <h2>DETALLES DEL EVENTO</h2>
+        <p><strong>Fecha:</strong> Domingo 20 de julio de 2025</p>
+        <p><strong>Hora:</strong> 4:00 PM</p>
+        <p><strong>Lugar:</strong> Salón “Alegría” – Av. Fiesta Infantil #123, Morelia, Michoacán </strong></p>
+        <p><strong>¡Tu presencia es lo más importante!</p>
+        <p><a href="https://www.google.com.mx/maps/place/Catedral+de+Morelia/@19.7061584,-101.1938863,16.91z/data=!4m6!3m5!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!8m2!3d19.702423!4d-101.1923185!16zL20vMDU4MDNy?hl=es&entry=ttu" target="_blank">📌 Ver ubicación en Google Maps</a></p>
+    </section>
 
-  <section class="card" id="invitationCard">
-      <img id="imagen" src="assets/img/nina.png" alt="Baby Shower" />
-      <h2 id="titulo">¡ESTÁS INVITADO!</h2>
-      <p id="texto">Acompáñanos a celebrar la llegada de nuestra bebé</p>
-      <div id="countdown">Cargando...</div>
-  </section>
+    <section class="galeria">
+        <h2>GALERÍA</h2>
+        <div class="carrusel-contenido" id="carruselContenido">
+          <img class="carrusel-img visible" src="assets/img/img1.jpg" alt="Imagen 1" />
+          <img class="carrusel-img" src="assets/img/img2.jpg" alt="Imagen 2" />
+          <img class="carrusel-img" src="assets/img/img3.jpg" alt="Imagen 3" />
+          <img class="carrusel-img" src="assets/img/img4.jpg" alt="Imagen 4" />
+        </div>
+    </section>
 
-  <section class="info-card">
-      <h2>DETALLES DEL EVENTO</h2>
-      <p><strong>📅 Fecha:</strong> Domingo 20 de julio de 2025</p>
-      <p><strong>⏰ Hora:</strong> 4:00 PM</p>
-      <p><strong>📍 Lugar:</strong> Salón “Alegría” – Av. Fiesta Infantil #123, Morelia, Michoacán </strong></p>
-      <p><strong>🎁 ¡Tu presencia es lo más importante!</p>
-      <p><a href="https://www.google.com.mx/maps/place/Catedral+de+Morelia/@19.7061584,-101.1938863,16.91z/data=!4m6!3m5!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!8m2!3d19.702423!4d-101.1923185!16zL20vMDU4MDNy?hl=es&entry=ttu" target="_blank">📌 Ver ubicación en Google Maps</a></p>
-  </section>
+    <audio id="audioBienvenida" src="assets/audio/piano.mp3" preload="auto" loop></audio>
 
-  <section class="galeria">
-      <h2>Galería del Recuerdo 📸</h2>
-      <div class="carrusel-contenido" id="carruselContenido">
-        <img class="carrusel-img visible" src="assets/img/img1.jpg" alt="Imagen 1" />
-        <img class="carrusel-img" src="assets/img/img2.jpg" alt="Imagen 2" />
-        <img class="carrusel-img" src="assets/img/img3.jpg" alt="Imagen 3" />
-        <img class="carrusel-img" src="assets/img/img4.jpg" alt="Imagen 4" />
-      </div>
-  </section>
-
-  <audio id="audioBienvenida" src="assets/audio/piano.mp3" preload="auto" loop></audio>
-
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
 
   </main>
 </body>
