@@ -41,7 +41,10 @@ body {
 .card img {
   width: 100%;
   object-fit: cover;
-  animation: float 6s ease-in-out infinite;
+}
+
+#imagen {
+  animation: float 4s ease-in-out infinite;
 }
 
 .card h2 {
@@ -191,6 +194,24 @@ body {
   transform: translateX(-50%) scale(1.05);
 }
 
+.btn-whatsapp {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -205,3 +226,42 @@ body {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.1); }
 }
+
+.cuenta-animada {
+  margin-top: 20px;
+}
+
+.reloj {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.reloj div {
+  background: #fff;
+  color: #d81b60;
+  border-radius: 10px;
+  padding: 3px;
+  min-width: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: pop 0.8s ease-in-out;
+}
+
+.reloj span {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.reloj small {
+  font-size: 12px;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+
