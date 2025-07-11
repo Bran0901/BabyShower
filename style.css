@@ -8,8 +8,9 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #ffeef7, #fff0ff);
+  font-family: 'Fredoka', sans-serif;
+  /*background: linear-gradient(to bottom, #ffeef7, #fff0ff);*/
+  background: url('assets/img/img9.jpeg') no-repeat center center fixed;
   color: #333;
   line-height: 1.6;
   text-align: center;
@@ -39,23 +40,21 @@ body {
 
 .card img {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
   object-fit: cover;
-  animation: float 4s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 .card h2 {
-  color: #8e24aa;
+  color: #640021;
   margin-bottom: 10px;
-  animation: heartbeat 1.5s infinite ease-in-out;
+  animation: heartbeat 6s infinite ease-in-out;
 }
 
 .card p {
   font-size: 20px;
   margin-bottom: 8px;
   color: #444;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 #countdown {
@@ -80,19 +79,20 @@ body {
 
 .info-card h2 {
   text-align: center;
-  color: #8e24aa;
+  color: #640021;
   margin-bottom: 20px;
+  animation: heartbeat 6s infinite ease-in-out;
 }
 
 .info-card p {
   font-size: 1.05em;
   margin: 10px 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   text-align: center;
 }
 
 .info-card a {
-  color: #5e35b1;
+  color: #3b0016;
   text-decoration: none;
   font-weight: 500;
 }
@@ -110,8 +110,9 @@ body {
 
 .galeria h2 {
   font-size: 1.6em;
-  color: #6a1b9a;
+  color: #640021;
   margin-bottom: 20px;
+  animation: heartbeat 6s infinite ease-in-out;
 }
 
 .carrusel-contenido {
@@ -122,7 +123,7 @@ body {
   overflow: hidden;
   border-radius: 12px;
   box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-  background-color: #fff;
+  background-color: #640021;
   position: relative;
 }
 

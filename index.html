@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Invitación Baby Shower</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
     <div id="activarSonido" class="btn-sonido"> 🔊 </div>
 
     <section class="card" id="invitationCard">
-        <img id="imagen" src="assets/img/nina.png" alt="Baby Shower" />
+        <img id="imagen" src="assets/img/img1.png" alt="Baby Shower" />
         <h2 id="titulo">¡ESTÁS INVITADO!</h2>
         <p id="texto">Acompáñanos a celebrar la llegada de nuestra bebé</p>
         <div id="countdown">Cargando...</div>
@@ -21,22 +22,29 @@
 
     <section class="info-card">
         <h2>DETALLES DEL EVENTO</h2>
-        <p><strong>Fecha:</strong> Domingo 20 de julio de 2025</p>
-        <p><strong>Hora:</strong> 4:00 PM</p>
-        <p><strong>Lugar:</strong> Salón “Alegría” – Av. Fiesta Infantil #123, Morelia, Michoacán </strong></p>
+        <p><strong>Fecha:</strong> Sábado 09 de Agosto de 2025</p>
+        <p><strong>Hora:</strong> 3:30 PM</p>
+        <p><strong>Lugar:</strong> Jardín de Eventos ISKAL - Oaxaca 209, Arbide, 37360 León de los Aldama, Gto. </strong></p>
         <p><strong>¡Tu presencia es lo más importante!</p>
-        <p><a href="https://www.google.com.mx/maps/place/Catedral+de+Morelia/@19.7061584,-101.1938863,16.91z/data=!4m6!3m5!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!8m2!3d19.702423!4d-101.1923185!16zL20vMDU4MDNy?hl=es&entry=ttu" target="_blank">Ver ubicación en Google Maps</a></p>
+        <p><a href="https://www.google.com/maps/place/Jard%C3%ADn+de+Eventos+ISKAL/@21.1216846,-101.6905413,17z/data=!3m1!4b1!4m6!3m5!1s0x842bbf002b4e9797:0x7e8be39e318e2132!8m2!3d21.1216846!4d-101.6905413!16s%2Fg%2F11wqrf0_0r?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver ubicación en Google Maps</a></p>
     </section>
 
-    <section class="galeria">
-        <h2>GALERÍA</h2>
-        <div class="carrusel-contenido" id="carruselContenido">
-          <img class="carrusel-img visible" src="assets/img/img1.jpg" alt="Imagen 1" />
-          <img class="carrusel-img" src="assets/img/img2.jpg" alt="Imagen 2" />
-          <img class="carrusel-img" src="assets/img/img3.jpg" alt="Imagen 3" />
-          <img class="carrusel-img" src="assets/img/img4.jpg" alt="Imagen 4" />
-        </div>
+    <!-- Galería dentro de una tarjeta -->
+    <section class="card galeria">
+      <h2>GALERÍA</h2>
+      <div class="carrusel-contenido" id="carruselContenido">
+        <img class="carrusel-img visible" src="assets/img/img3.jpg" alt="Imagen 1" />
+        <img class="carrusel-img" src="assets/img/img4.jpg" alt="Imagen 2" />
+        <img class="carrusel-img" src="assets/img/img5.jpg" alt="Imagen 3" />
+        <img class="carrusel-img" src="assets/img/img6.jpg" alt="Imagen 4" />
+      </div>
     </section>
+
+    <!-- Nueva imagen decorativa después de la galería -->
+    <section class="card">
+      <img src="assets/img/img7.jpg" alt="Imagen decorativa final" style="width: 100%; border-radius: 12px;" />
+    </section>
+
 
     <audio id="audioBienvenida" src="assets/audio/piano.mp3" preload="auto" loop></audio>
 
